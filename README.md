@@ -1,11 +1,11 @@
 # Tinnitus ART Generators
 
-This repository contains Python and Rust implementations of an acoustic ripple tinnitus-treatment sound generator, along with benchmark notes comparing the Python port to the original MATLAB workflow.
+This repository contains Python and Rust implementations of an acoustic ripple tinnitus-treatment sound generator, along with benchmark notes comparing both ports to the original MATLAB workflow.
 
 ## Repository Layout
 
 - `README.md` - project overview, usage, and runtime notes
-- `PYTHON_MATLAB_COMPARISON.md` - Python vs MATLAB performance and equivalence notes
+- `PYTHON_RUST_MATLAB_COMPARISON.md` - Python, Rust, and MATLAB performance and equivalence notes
 - `tinnitus-cross-frequency-therapy.pdf` - copy of the study paper
 - `python/` - Python implementation and example audiogram inputs
 - `rust/` - Rust implementation
@@ -147,7 +147,7 @@ Representative full `900`-chunk / `60 min` run times on this machine:
 - Python `numba`: `18.98 s` on a repeated run
 - Rust release build: `12.76 s` on a repeated run
 
-The Python vs MATLAB comparison and deterministic equivalence check are documented in `PYTHON_MATLAB_COMPARISON.md`.
+The implementation comparison and deterministic equivalence checks are documented in `PYTHON_RUST_MATLAB_COMPARISON.md`.
 
 ## Cold vs Warm Start
 
